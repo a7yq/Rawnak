@@ -1,32 +1,58 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html dir="rtl" lang="ar">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>شكراً لاختياركم منتجنا</title>
+  <title>رَوْنَق</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: url('https://cdn.vatrin.app/static/images/policy-modal-bg-a18d51310eb1a4220b35327b1832a4a3.png?vsn=d') no-repeat center center / cover;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background: rgba(255,255,255,0.9);
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .container h1 {
+      color: #E84393;
+      margin: 0 0 10px;
+    }
+    .container p {
+      margin: 0 0 20px;
+      font-size: 1.1em;
+    }
+    .container a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1em;
+      border-radius: 5px;
+    }
+    .btn-feedback {
+      background: #E84393;
+    }
+    .btn-details {
+      background: #333;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:Arial; padding:40px; background:#f2f2f2;">
-
-  <h1>نقدّر رأيك 💛</h1>
-  <p>اختر أحد الخيارات التالية</p>
-
-  <br>
-
-  <!-- زر التقييم (فوق) -->
-  <a href="https://forms.gle/81yT64jbKE3ipF7T6" target="_blank">
-    <button style="padding:15px 35px; font-size:18px; border:none; background:#4CAF50; color:white; border-radius:12px; cursor:pointer;">
-      قيّم المنتج
-    </button>
-  </a>
-
-  <br><br>
-
-  <!-- زر الانستغرام (تحت) -->
-  <a href="https://www.instagram.com/rawnak_87m" target="_blank">
-    <button style="padding:15px 35px; font-size:18px; border:none; background:#E1306C; color:white; border-radius:12px; cursor:pointer;">
-      تابعنا على إنستغرام
-    </button>
-  </a>
-
+<body>
+  <div class="container">
+    <h1>رَوْنَق</h1>
+    <p>نشكركم على اختياركم رَوْنَق! نود معرفة رأيكم حول تجربتكم معنا.</p>
+    <a href="https://forms.gle/81yT64jbKE3ipF7T6" class="btn-feedback">كيف كانت لمسة رَوْنَق؟</a>
+    <a href="https://www.instagram.com/rawnak_87m" class="btn-details">لمزيد من التفاصيل... هنا رَوْنَق</a>
+  </div>
 </body>
 </html>
