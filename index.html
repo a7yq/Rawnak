@@ -1,157 +1,142 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>رَوْنَق - Rawnaq</title>
-  <style>
-    :root {
-      --bg-yellow: #f3ce70; /* اللون الأصفر العلوي */
-      --card-bg: #f7f8fa;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رَوْنَق</title>
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-yellow);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
+<style>
+body{
+    margin:0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+    background:#e9e9e9;
+}
 
-    /* الحاوية البيضاء السفلية */
-    .main-wrapper {
-      width: 100%;
-      background-color: white;
-      margin-top: 220px; 
-      border-radius: 45px 45px 0 0;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 90px;
-      position: relative;
-    }
+/* الجزء الأصفر */
+.top-section{
+    background:#e5be6a;
+    height:230px;
+}
 
-    /* إطار الشعار الدائري */
-    .logo-container {
-      position: absolute;
-      top: -90px;
-      width: 180px;
-      height: 180px;
-      background: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
+/* الكرت الأبيض */
+.container{
+    background:#f5f5f5;
+    margin-top:-120px;
+    border-radius:40px 40px 0 0;
+    padding:100px 20px 40px;
+    min-height:100vh;
+    position:relative;
+    text-align:center;
+}
 
-    .logo-container img {
-      width: 90%;
-      height: 90%;
-      object-fit: contain;
-    }
+/* دائرة اللوجو */
+.logo-wrapper{
+    position:absolute;
+    top:-70px;
+    right:0;
+    left:0;
+    margin:auto;
+    width:140px;
+    height:140px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
 
-    .title {
-      font-size: 26px;
-      font-weight: bold;
-      color: #1a1a1a;
-      margin-bottom: 40px;
-    }
+.logo-wrapper img{
+    width:85%;
+    height:85%;
+    object-fit:contain;
+    border-radius:50%;
+}
 
-    .links-section {
-      width: 92%;
-      max-width: 450px;
-    }
+h1{
+    font-size:24px;
+    margin-bottom:25px;
+}
 
-    /* تصميم البطاقة */
-    .card-link {
-      display: flex;
-      align-items: center;
-      background-color: var(--card-bg);
-      text-decoration: none;
-      padding: 16px 20px;
-      border-radius: 25px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    }
+/* تصميم البطاقة */
+.card{
+    background:#eeeeee;
+    border-radius:20px;
+    padding:15px;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-decoration:none;
+    color:black;
+}
 
-    .card-content {
-      flex-grow: 1;
-      text-align: right;
-      color: #000;
-      font-size: 18px;
-      margin-right: 15px;
-    }
+.card-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
 
-    .card-img {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      object-fit: cover;
-    }
+.card img{
+    width:45px;
+    height:45px;
+    border-radius:12px;
+    object-fit:cover;
+}
 
-    .find-me {
-      align-self: flex-start;
-      margin: 20px 25px 15px 0;
-      font-size: 18px;
-      color: #444;
-      font-family: Arial, sans-serif;
-    }
+.arrow{
+    font-size:20px;
+}
 
-    .arrow {
-      color: #333;
-      font-size: 20px;
-      margin-left: 5px;
-    }
+.subtitle{
+    font-size:13px;
+    color:#777;
+}
 
-    .card-subtitle {
-      display: block;
-      color: #888;
-      font-size: 13px;
-      margin-top: 3px;
-    }
-
-    .insta-icon-img {
-      width: 45px;
-      height: 45px;
-    }
-
-  </style>
+.find{
+    text-align:left;
+    margin:25px 0 15px;
+    font-size:18px;
+    color:#333;
+    direction:ltr;
+}
+</style>
 </head>
+
 <body>
 
-  <div class="main-wrapper">
-    <div class="logo-container">
-      <img src="https://raw.githubusercontent.com/a7yq/Rawnaq/main/logo.jpg" alt="رَوْنَق">
+<div class="top-section"></div>
+
+<div class="container">
+
+<div class="logo-wrapper">
+    <img src="logo.jpg" alt="رونق">
+</div>
+
+<h1>كيف كانت لمسة رَوْنَق؟</h1>
+
+<a href="https://forms.gle/81yT64jbKE3ipF7T6" class="card">
+    <div class="card-left">
+        <img src="logo.jpg">
+        <div>كيف كانت لمسة رَوْنَق؟</div>
     </div>
+    <div class="arrow">➔</div>
+</a>
 
-    <div class="title">كيف كانت لمسة رَوْنَق؟</div>
+<div class="find">Find me on</div>
 
-    <div class="links-section">
-      
-      <a href="https://forms.gle/81yT64jbKE3ipF7T6" class="card-link">
-        <div class="arrow">➔</div>
-        <div class="card-content">كيف كانت لمسة رَوْنَق؟</div>
-        <img src="https://raw.githubusercontent.com/a7yq/Rawnaq/main/logo.jpg" class="card-img" alt="رَوْنَق">
-      </a>
-
-      <div class="find-me">Find me on</div>
-
-      <a href="https://www.instagram.com/rawnak_87m" class="card-link">
-        <div class="arrow">➔</div>
-        <div class="card-content">
-          <strong>Instagram</strong>
-          <span class="card-subtitle">لمزيد من التفاصيل... هنا رَوْنَق</span>
+<a href="https://www.instagram.com/rawnak_87m" class="card">
+    <div class="card-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg">
+        <div>
+            Instagram
+            <div class="subtitle">لمزيد من التفاصيل... هنا رَوْنَق</div>
         </div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" class="insta-icon-img">
-      </a>
-
     </div>
-  </div>
+    <div class="arrow">➔</div>
+</a>
+
+</div>
 
 </body>
 </html>
